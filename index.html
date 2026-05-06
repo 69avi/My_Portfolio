@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu Sajwan | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+    <div class="parallax-bg" id="parallax-bg">
+        <div class="layer layer-1" data-speed="0.05"></div>
+        <div class="layer layer-2" data-speed="0.1"></div>
+        <div class="layer layer-3" data-speed="0.2"></div>
+    </div>
+    <div id="splash-screen" class="splash-screen" role="alert" aria-busy="true" aria-live="assertive">
+        <div class="loader-content">
+            <div class="sharingan-loader">
+                <i class="fa-solid fa-eye fa-4x text-magenta sharingan-spin"></i>
+            </div>
+            <h2 class="loader-text mt-2">Loading System...</h2>
+            <div class="progress-bar-container mt-1">
+                <div class="progress-bar" id="loader-progress"></div>
+            </div>
+            <p class="loader-status mt-1 text-xs text-gray" id="loader-status-text">Initializing UI Modules</p>
+        </div>
+        <noscript><style>.splash-screen { display: none; }</style></noscript>
+    </div>
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-btn active">Home</a></li>
+                <li><a href="#about" class="nav-btn">About</a></li>
+                <li><a href="#skills" class="nav-btn">Skills</a></li>
+                <li><a href="#projects" class="nav-btn">Projects</a></li>
+                <li><a href="#services" class="nav-btn">Services</a></li>
+                <li><a href="#contact" class="nav-btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="home" class="home-section section-padding">
+            <div class="container grid-2-col">
+                <div class="hero-content fade-up">
+                    <div class="tag availability-tag w-max">
+                        <span class="dot green-dot"></span> Available for freelance work
+                    </div>
+                    <h1 class="main-heading">Hi, I'm <span class="text-magenta">Priyanshu Sajwan</span></h1>
+                    <h2 class="sub-heading">B.Tech CSE AI/ML</h2>
+                    <p class="hero-description text-gray">
+                        Student at VIT Bhopal with a good hand in Python and HTML, and currently learning Java. I am also deeply interested in finance and actively pursuing a path to become a Quant Engineer. I strive to combine solid engineering and analytical skills to build modern applications.
+                    </p>
+                    <div class="hero-cta mt-2">
+                        <a href="#contact" class="btn primary-btn">Hire Me</a>
+                        <a href="#" class="btn outlined-magenta-btn" onclick="document.getElementById('resume-modal').style.display='flex';return false;">Resume</a>
+                    </div>
+                    <div class="hero-socials mt-3">
+                        <span class="text-gray">Follow me:</span>
+                        <div class="social-icons">
+                            <a href="https://github.com/69avi" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="social-btn"><i class="fa-brands fa-discord"></i></a>
+                            <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://instagram.com/priyanshuuu_.s" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image glass-panel fade-up delay-1" id="hero-card">
+                    <div class="illustration-placeholder uchiha-bg" id="hero-media-wrap">
+                        <video
+                            id="hero-video"
+                            src="assets/hero.mp4"
+                            loop
+                            muted
+                            playsinline
+                            preload="auto"
+                        ></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section section-padding">
+            <div class="container grid-2-col reverse-mobile">
+                <div class="about-content fade-up">
+                    <div class="profile-badge glass-panel-sm w-max mb-2 sharingan-hover">
+                        <i class="fa-solid fa-eye text-magenta fa-2x sharingan-spin-slow"></i>
+                        <div class="ms-1">
+                            <span class="username d-block text-magenta">@priyanshuuu._s</span>
+                            <span class="role text-gray text-xs">B.Tech CSE AI/ML Student</span>
+                        </div>
+                    </div>
+                    <h2 class="section-title">ABOUT <span class="text-magenta">ME</span></h2>
+                    <div class="about-text glass-panel mt-2 text-gray">
+                        <p>Hi! I'm Priyanshu Sajwan, a B.Tech CSE AI/ML student at VIT Bhopal.</p>
+                        <p class="mt-1">I have a good command of Python and HTML, and I am currently expanding my programming foundation by learning Java.</p>
+                        <p class="mt-1">Beyond software engineering, I have a strong passion for finance. I am actively pursuing the path of a Quant Engineer, aiming to bridge technical algorithms with market data.</p>
+                        <p class="mt-2 text-light font-semibold">Right now, I'm improving my skills in:</p>
+                        <ul class="skills-list mt-1">
+                            <li><span class="text-magenta">#</span>Python, HTML, and core programming in Java</li>
+                            <li><span class="text-magenta">#</span>Exploring NLP models and AI/ML applications</li>
+                            <li><span class="text-magenta">#</span>Quantitative finance, data analysis, and algorithmic logic</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image glass-panel fade-up delay-1 uchiha-bg" id="about-card">
+                    <div class="illustration-placeholder" id="about-media-wrap">
+                        <video
+                            id="about-video"
+                            src="assets/about.mp4"
+                            loop
+                            muted
+                            playsinline
+                            preload="auto"
+                        ></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-up">
+                    <h2 class="section-title">MY <span class="text-magenta">SKILLS</span></h2>
+                    <p class="section-subtitle w-md mx-auto text-gray mt-1">Languages, tools and domains I work with — and where I'm headed.</p>
+                </div>
+                <div class="skills-grid mt-3 fade-up">
+                    <div class="skill-group glass-panel">
+                        <h4 class="skill-group-title"><i class="fa-solid fa-code text-magenta"></i> &nbsp;Languages</h4>
+                        <div class="skill-bars mt-2">
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Python</span><span class="text-magenta">80%</span></div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-label"><span>HTML / CSS</span><span class="text-magenta">75%</span></div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Java</span><span class="text-magenta">35%</span></div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:35%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-label"><span>JavaScript</span><span class="text-magenta">45%</span></div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:45%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-group glass-panel">
+                        <h4 class="skill-group-title"><i class="fa-solid fa-brain text-magenta"></i> &nbsp;AI / ML &amp; Data</h4>
+                        <div class="skill-bars mt-2">
+                            <div class="skill-item">
+                                <div class="skill-label"><span>NLP</span><span class="text-magenta">60%</span></div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:60%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Data Analysis</span><span class="text-magenta">55%</span></div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:55%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Machine Learning</span><span class="text-magenta">50%</span></div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:50%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Quant Finance</span><span class="text-magenta">40%</span></div>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:40%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-group glass-panel">
+                        <h4 class="skill-group-title"><i class="fa-solid fa-screwdriver-wrench text-magenta"></i> &nbsp;Tools &amp; Platforms</h4>
+                        <div class="tool-tags mt-2">
+                            <span class="tag tag-sm">Git &amp; GitHub</span>
+                            <span class="tag tag-sm">VS Code</span>
+                            <span class="tag tag-sm">Jupyter Notebook</span>
+                            <span class="tag tag-sm">NumPy</span>
+                            <span class="tag tag-sm">Pandas</span>
+                            <span class="tag tag-sm">Matplotlib</span>
+                            <span class="tag tag-sm">Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-up">
+                    <h2 class="section-title">FEATURED <span class="text-magenta">WORK</span></h2>
+                    <p class="section-subtitle w-md mx-auto text-gray mt-1">A selection of projects I've built — combining AI/ML, Python scripting, and web development with a growing focus on quantitative engineering.</p>
+                </div>
+                <div class="projects-grid mt-3">
+                    <div class="project-card glass-panel fade-up sharingan-hover tilt-card">
+                        <div class="project-img-placeholder">
+                            <div class="project-overlay"></div>
+                            <span class="text-magenta proj-icon"><i class="fa-solid fa-robot fa-3x"></i></span>
+                        </div>
+                        <div class="project-info mt-2">
+                            <h3 class="text-light">NLP Chatbot</h3>
+                            <p class="text-gray mt-1 text-sm">An intelligent conversational agent built using Natural Language Processing techniques to understand and respond to user queries.</p>
+                            <div class="tech-tags mt-1">
+                                <span class="tag tag-sm">Python</span>
+                                <span class="tag tag-sm">NLP</span>
+                                <span class="tag tag-sm">AI/ML</span>
+                            </div>
+                            <div class="project-actions mt-2 flex-between">
+                                <a href="https://github.com/69avi/ChatBot" target="_blank" class="btn outlined-magenta-btn btn-sm">GitHub</a>
+                                <a href="https://github.com/69avi/ChatBot" target="_blank" class="btn primary-btn btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-panel fade-up delay-1 sharingan-hover tilt-card">
+                        <div class="project-img-placeholder">
+                            <div class="project-overlay"></div>
+                            <span class="text-magenta proj-icon"><i class="fa-solid fa-chart-line fa-3x"></i></span>
+                        </div>
+                        <div class="project-info mt-2">
+                            <h3 class="text-light">Finance Dashboard</h3>
+                            <p class="text-gray mt-1 text-sm">A dashboard tracking market data, aligning with my passion for quantitative finance and data visualization.</p>
+                            <div class="tech-tags mt-1">
+                                <span class="tag tag-sm">Python</span>
+                                <span class="tag tag-sm">Data Analysis</span>
+                                <span class="tag tag-sm">Finance</span>
+                            </div>
+                            <div class="project-actions mt-2 flex-between">
+                                <a href="https://github.com/69avi/Simple_Finance_Dashboard" target="_blank" class="btn outlined-magenta-btn btn-sm">GitHub</a>
+                                <a href="https://github.com/69avi/Simple_Finance_Dashboard" target="_blank" class="btn primary-btn btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-panel fade-up delay-2 sharingan-hover tilt-card">
+                        <div class="project-img-placeholder">
+                            <div class="project-overlay"></div>
+                            <span class="text-magenta proj-icon"><i class="fa-solid fa-plane fa-3x"></i></span>
+                        </div>
+                        <div class="project-info mt-2">
+                            <h3 class="text-light">Flight Pomodoro</h3>
+                            <p class="text-gray mt-1 text-sm">A flight-themed Pomodoro timer — track focus sessions and breaks with a travel-inspired productivity tool built with vanilla web tech.</p>
+                            <div class="tech-tags mt-1">
+                                <span class="tag tag-sm">HTML</span>
+                                <span class="tag tag-sm">CSS</span>
+                                <span class="tag tag-sm">JavaScript</span>
+                            </div>
+                            <div class="project-actions mt-2 flex-between">
+                                <a href="https://github.com/69avi/Flight-Pomodoro-App" target="_blank" class="btn outlined-magenta-btn btn-sm">GitHub</a>
+                                <a href="https://htmlpreview.github.io/?https://github.com/69avi/Flight-Pomodoro-App/blob/main/index.html" target="_blank" class="btn primary-btn btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-up">
+                    <h2 class="section-title">WHAT I <span class="text-magenta">OFFER</span></h2>
+                </div>
+                <div class="services-grid mt-3">
+                    <div class="service-card glass-panel fade-up text-center sharingan-hover tilt-card">
+                        <div class="service-icon mb-1"><i class="fa-solid fa-code text-magenta fa-2x"></i></div>
+                        <h3 class="text-light">Web Development</h3>
+                        <p class="text-gray text-sm mt-1">Visually stunning, fast, and responsive web pages crafted perfectly for your brand.</p>
+                        <div class="feature-tags mt-2 flex-center">
+                            <span class="tag rounded-pill tag-sm">Responsive Design</span>
+                            <span class="tag rounded-pill tag-sm">Fast Loading</span>
+                        </div>
+                    </div>
+                    <div class="service-card glass-panel fade-up delay-1 text-center sharingan-hover tilt-card">
+                        <div class="service-icon mb-1"><i class="fa-solid fa-brain text-magenta fa-2x"></i></div>
+                        <h3 class="text-light">AI / ML Scripts</h3>
+                        <p class="text-gray text-sm mt-1">Python-powered NLP models, chatbots, and data pipelines built for real-world automation and analysis.</p>
+                        <div class="feature-tags mt-2 flex-center">
+                            <span class="tag rounded-pill tag-sm">Python</span>
+                            <span class="tag rounded-pill tag-sm">NLP</span>
+                        </div>
+                    </div>
+                    <div class="service-card glass-panel fade-up delay-2 text-center sharingan-hover tilt-card">
+                        <div class="service-icon mb-1"><i class="fa-solid fa-chart-line text-magenta fa-2x"></i></div>
+                        <h3 class="text-light">Quant & Data Analysis</h3>
+                        <p class="text-gray text-sm mt-1">Algorithmic logic meets market data — financial analysis scripts, data visualization, and quantitative research tools.</p>
+                        <div class="feature-tags mt-2 flex-center">
+                            <span class="tag rounded-pill tag-sm">Finance</span>
+                            <span class="tag rounded-pill tag-sm">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section section-padding pb-4">
+            <div class="container">
+                <div class="section-header fade-up text-center mb-3">
+                    <h2 class="section-title">Get In <span class="text-magenta">Touch</span></h2>
+                    <p class="section-subtitle text-gray mt-1">Let's collaborate! I am always open to discussing exciting projects and new opportunities.</p>
+                </div>
+                <div class="contact-grid grid-2-col">
+                    <div class="contact-info glass-panel fade-up">
+                        <div class="contact-item flex-align-center mb-2">
+                            <div class="contact-icon glass-icon"><i class="fa-solid fa-envelope text-magenta"></i></div>
+                            <div class="ms-1">
+                                <h4 class="text-light text-sm">Email</h4>
+                                <p class="text-gray text-sm">priyanshusajwan6543@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item flex-align-center mb-2">
+                            <div class="contact-icon glass-icon"><i class="fa-solid fa-phone text-magenta"></i></div>
+                            <div class="ms-1">
+                                <h4 class="text-light text-sm">Phone</h4>
+                                <p class="text-gray text-sm">Available on request</p>
+                            </div>
+                        </div>
+                        <div class="contact-item flex-align-center mb-2">
+                            <div class="contact-icon glass-icon"><i class="fa-solid fa-location-dot text-magenta"></i></div>
+                            <div class="ms-1">
+                                <h4 class="text-light text-sm">Location</h4>
+                                <p class="text-gray text-sm">VIT Bhopal</p>
+                            </div>
+                        </div>
+                        <div class="contact-socials mt-3">
+                            <p class="mb-1 text-light text-sm">Follow Me:</p>
+                            <div class="social-icons">
+                                <a href="https://github.com/69avi" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="social-btn"><i class="fa-brands fa-discord"></i></a>
+                                <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://instagram.com/priyanshuuu_.s" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container glass-panel fade-up delay-1">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group mb-1">
+                                <input type="text" id="name" placeholder="Your Name" required class="glass-input">
+                            </div>
+                            <div class="form-group mb-1">
+                                <input type="email" id="email" placeholder="Your Email" required class="glass-input">
+                            </div>
+                            <div class="form-group mb-1">
+                                <textarea id="message" rows="5" placeholder="Your Message" required class="glass-input"></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn full-width mt-1">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="text-center pb-2 text-gray text-xs">
+            <p>&copy; 2025 Priyanshu Sajwan. All Rights Reserved.</p>
+        </footer>
+    
+    <!-- Resume Modal -->
+    <div id="resume-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:9999;align-items:center;justify-content:center;padding:1rem;" onclick="if(event.target===this)this.style.display='none'">
+        <div style="background:#111;border:1px solid rgba(200,0,0,0.35);border-radius:14px;width:min(920px,95vw);height:90vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 0 50px rgba(200,0,0,0.15);">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:0.9rem 1.4rem;border-bottom:1px solid rgba(255,255,255,0.07);flex-shrink:0;">
+                <span style="color:#fff;font-weight:600;font-size:0.95rem;letter-spacing:0.04em;">📄 &nbsp;Priyanshu Sajwan — Resume</span>
+                <div style="display:flex;gap:0.6rem;">
+                    <a href="assets/resume.pdf" download="Priyanshu_Sajwan_Resume.pdf" style="background:#c00020;color:#fff;border:none;padding:0.38rem 0.9rem;border-radius:6px;cursor:pointer;font-size:0.82rem;text-decoration:none;font-weight:600;">⬇ Download</a>
+                    <button onclick="document.getElementById('resume-modal').style.display='none'" style="background:rgba(255,255,255,0.07);color:#aaa;border:1px solid rgba(255,255,255,0.12);padding:0.38rem 0.9rem;border-radius:6px;cursor:pointer;font-size:0.82rem;">✕ Close</button>
+                </div>
+            </div>
+            <iframe src="assets/resume.pdf#toolbar=1" style="flex:1;width:100%;border:none;background:#fff;" type="application/pdf"></iframe>
+        </div>
+    </div>
+
+    
+    <!-- Resume Modal -->
+    <div id="resume-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:9999;align-items:center;justify-content:center;padding:1rem;" onclick="if(event.target===this)this.style.display='none'">
+        <div style="background:#111;border:1px solid rgba(200,0,0,0.35);border-radius:14px;width:min(920px,95vw);height:90vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 0 50px rgba(200,0,0,0.15);">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:0.9rem 1.4rem;border-bottom:1px solid rgba(255,255,255,0.07);flex-shrink:0;">
+                <span style="color:#fff;font-weight:600;font-size:0.95rem;letter-spacing:0.04em;">📄 &nbsp;Priyanshu Sajwan — Resume</span>
+                <div style="display:flex;gap:0.6rem;">
+                    <a href="assets/resume.pdf" download="Priyanshu_Sajwan_Resume.pdf" style="background:#c00020;color:#fff;border:none;padding:0.38rem 0.9rem;border-radius:6px;cursor:pointer;font-size:0.82rem;text-decoration:none;font-weight:600;">⬇ Download</a>
+                    <button onclick="document.getElementById('resume-modal').style.display='none'" style="background:rgba(255,255,255,0.07);color:#aaa;border:1px solid rgba(255,255,255,0.12);padding:0.38rem 0.9rem;border-radius:6px;cursor:pointer;font-size:0.82rem;">✕ Close</button>
+                </div>
+            </div>
+            <iframe src="assets/resume.pdf#toolbar=1" style="flex:1;width:100%;border:none;background:#fff;" type="application/pdf"></iframe>
+        </div>
+    </div>
+
+    </main>
+    <div class="bg-effects">
+        <div class="glow-orb top-right"></div>
+        <div class="glow-orb bottom-left"></div>
+        <div class="glow-orb center-magenta"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
